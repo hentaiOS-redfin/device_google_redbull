@@ -16,6 +16,10 @@ PRODUCT_COPY_FILES += \
 
 TARGET_PREBUILT_KERNEL := device/google/redbull-kernel/Image.lz4
 
+# Adaptive charging
+PRODUCT_COPY_FILES += \
+    device/google/redbull/adaptivecharging.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/adaptivecharging.xml
+
 # RCS
 PRODUCT_PACKAGES += \
     PresencePolling \
