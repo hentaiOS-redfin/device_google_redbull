@@ -11,7 +11,6 @@ AB_OTA_PARTITIONS += \
     vendor
 
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += device/google/redfin/device_framework_matrix_product.xml
 
 # Needed for camera
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
