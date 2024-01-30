@@ -984,7 +984,6 @@ ifneq ($(PRODUCT_VENDOR_FREEZE_SYSTEM_BUILD),true)
 PRODUCT_PACKAGES += redbull_product_compatibility_matrix.xml
 endif
 # Set system properties identifying the chipset
-PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Qualcomm
 PRODUCT_VENDOR_PROPERTIES += ro.soc.model=SM7250
 
 #################################################################################
