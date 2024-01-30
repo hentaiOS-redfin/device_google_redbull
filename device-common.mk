@@ -23,17 +23,17 @@ PRODUCT_VENDOR_MOVE_ENABLED := true
 TARGET_BOARD_PLATFORM := lito
 
 PRODUCT_SOONG_NAMESPACES += \
+    device/google/redbull \
     hardware/google/av \
     hardware/google/camera \
     hardware/google/interfaces \
     hardware/google/pixel \
-    device/google/redbull \
-    hardware/qcom/sm7250 \
+    hardware/qcom \
     system/chre/host/hal_generic \
     vendor/google/airbrush/floral \
     vendor/google/biometrics/face/florence \
     vendor/google/darwinn \
-    hardware/qcom/sm7250/display \
+    hardware/qcom/display \
     vendor/google/camera \
     vendor/qcom/sm7250 \
     vendor/google/interfaces \
@@ -43,7 +43,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Include GPS soong namespace
 PRODUCT_SOONG_NAMESPACES += \
-    hardware/qcom/sm7250/gps \
+    hardware/qcom/gps \
     vendor/qcom/sm7250/proprietary/gps \
     vendor/qcom/sm7250/codeaurora/location
 
@@ -992,7 +992,7 @@ PRODUCT_VENDOR_PROPERTIES += ro.soc.model=SM7250
 #################################################################################
 
 # Display
--include hardware/qcom/sm7250/display/config/display-product.mk
+-include hardware/qcom/display/config/display-product.mk
 -include vendor/qcom/sm7250/proprietary/display/config/display-product-proprietary.mk
 
 # Security
