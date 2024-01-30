@@ -1,5 +1,8 @@
 DEVICE_PACKAGE_OVERLAYS += device/google/redbull/overlay-calyx
 
+# Platform
+TARGET_BOARD_PLATFORM := lito
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys-intf/display \
